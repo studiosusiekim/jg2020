@@ -1,17 +1,29 @@
 .button {
 width: 171px;
-height: 50px;
-border: .5px
-black solid;
-font-size: 1.2rem;
+height: 55px;
+border: 1px #595959 solid;
+font-size: 1.4rem;
 line-height: 124.9%;
 text-align: center;
 letter-spacing: 0.03em;
-color:black;
-text-decoration: none;
+color:red;
 cursor: pointer;
 background-color: white;
 text-align: center;
-border-radius: 8px;;
 margin-bottom: 5rem;
+}
+
+
+a:link, a:visited {
+
+  
+    color:rgb(6,27,51);
+
+}
+
+a:hover, a:active {
+    color:rgb(6,27,51);
+    font-size: 1.5rem;
+
+
 }
