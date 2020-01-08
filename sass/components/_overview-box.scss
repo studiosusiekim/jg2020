@@ -1,6 +1,6 @@
 
 
-.voc-intro {
+.voc-intro, .cic-intro {
     text-align: center;
 }
 
@@ -16,7 +16,7 @@
     overflow:hidden;
 }
 
-.voc__title {  
+.title {  
     grid-column: 2 / 6;
     grid-row: 1 / 2;
 }
@@ -25,6 +25,12 @@
 .para {
     color: rgb(232,99,84);
 }
+
+.parac {
+    color:rgb(0,85,255);
+}
+
+
 
 .paragraph {
     transition: background 1s, transform .7s ease-in;
@@ -45,7 +51,6 @@
 .p-erfahren {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-  
 }
 
 .p-blockaden {
@@ -70,7 +75,8 @@
 .p-berufsmusiker {
     grid-column: 4 / 5;
     grid-row: 1/ 2; 
-    padding-top:19px;
+    padding-top:22px;
+    padding-bottom:5px;
 
 }
 
@@ -90,7 +96,60 @@
     grid-row: 4 / 5; 
     justify-self: center;
     align-self: flex-start;
-   
-   
+}
 
+.cic {
+    display:grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: max-content(30%) auto max-content(33%);
+    grid-gap: 10px;
+    margin: 9rem auto;
+    padding: 0 4rem;
+    width: 850px;
+    text-align: center;
+    overflow:hidden;
+}
+
+.p-vernetzen {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.p-geschenk {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; 
+
+}
+
+.p-modernen {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4; 
+ 
+}
+.cic-img {
+    grid-column: 2 / 4;
+    grid-row: 1/ 4; 
+    height: 100%;
+    width:100%;
+   object-fit: cover;
+
+}
+
+.p-workshop {
+    grid-column: 4 / 5;
+    grid-row: 1/ 2; 
+    padding-top:22px;
+    padding-bottom:5px;
+
+}
+
+.p-veranstalten {
+    grid-column: 4/ 5;
+    grid-row: 2 / 3; 
+}
+
+.p-lieben {
+    grid-column: 4 / 5;
+    grid-row: 3/ 4; 
+    padding-top:45px;
 }
