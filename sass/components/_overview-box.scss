@@ -6,12 +6,14 @@
 
 .voc {
     display:grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: max-content(30%) auto max-content(33%);
-    grid-gap: 10px;
-    margin: 9rem auto;
-    padding: 0 4rem;
     width: 850px;
+    height:530px;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+  
+    grid-template-rows: repeat(3,170px);
+    grid-gap: 7px;
+    margin: 9rem auto;
+    padding: 0 2rem;
     text-align: center;
     overflow:hidden;
 }
@@ -65,11 +67,10 @@
  
 }
 .voc-img {
-    grid-column: 2 / 4;
-    grid-row: 1/ 4; 
+    grid-column: span 2;
+    grid-row: span 3; 
     width: 100%;
     max-height: 100%;
-
 }
 
 .p-berufsmusiker {
@@ -81,12 +82,12 @@
 }
 
 .p-studioquali {
-    grid-column: 4/ 5;
+    grid-column: 4 / 5;
     grid-row: 2 / 3; 
 }
 
 .p-technic {
-    grid-column: 4 / 5;
+    grid-column:4 / 5;
     grid-row: 3/ 4; 
 }
 
@@ -100,12 +101,14 @@
 
 .cic {
     display:grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: max-content(30%) auto max-content(33%);
-    grid-gap: 10px;
-    margin: 9rem auto;
-    padding: 0 4rem;
     width: 850px;
+    height:530px;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+  
+    grid-template-rows: repeat(3,170px);
+    grid-gap: 7px;
+    margin: 9rem auto;
+    padding: 0 2rem;
     text-align: center;
     overflow:hidden;
 }
@@ -127,20 +130,21 @@
  
 }
 .cic-img {
-    grid-column: 2 / 4;
-    grid-row: 1/ 4; 
-    height: 100%;
+    grid-column: span 2;
+    grid-row: span 3; 
+    max-height: 100%;
     width:100%;
-   object-fit: cover;
-
 }
+
+
+
+
 
 .p-workshop {
     grid-column: 4 / 5;
     grid-row: 1/ 2; 
     padding-top:22px;
     padding-bottom:5px;
-
 }
 
 .p-veranstalten {
