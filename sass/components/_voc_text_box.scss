@@ -1,0 +1,86 @@
+.text-box {
+    background-color: red($color: #000000);
+    min-width: 75%;
+    min-height:15%;
+    border: 12px solid #cfaa65;
+    margin: -2% 10%;
+    display: flex;
+    padding: 2% 10%;
+ 
+}
+
+.text-left  {
+    padding:0;
+    margin: 1.85em 1.64em 0 -2.1em;
+    font-size: 1em;
+}
+
+.text-right {
+    padding: 0;
+    margin: 3.3rem -2.8rem 0 3.75rem;
+    font-size: 1em;
+}
+
+
+.themen {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.basis, .weitere {
+    height:90px;
+    width:420px;
+}
+
+.flip-card {
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-out-in;
+    perspective: 150rem;
+    -moz-perspective:150rem; 
+    margin-top: -18px;
+}
+
+.flip-card:hover {
+    transform:rotateX(180deg);
+}
+
+.flip-card__front, .flip-card__front-r {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background: #e1b9aa;
+    padding-top:3.5%;  
+    padding-bottom:3.5%;
+    font-family:helvetica;
+    font-size:1.5em;
+    letter-spacing: 1%;
+    color: dimgrey;
+    font-weight: 100;
+    padding: auto 0;
+    letter-spacing: .6px;
+}
+
+.flip-card__back, .flip-card__back-r{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateX(180deg);
+    padding-top:3.5%;  
+    padding-bottom:3.5%;
+    background: #d5c0cd;
+
+    font-family:helvetica;
+    font-size: 1.1em;
+    letter-spacing: 1%;
+    color: dimgrey;
+    font-weight: 100;
+    letter-spacing: .6px;
+}
+
+.flip-card__front-r{
+    background: #d5c0cd;
+}
+
+.flip-card__back-r {
+    background: #e1b9aa;
+}

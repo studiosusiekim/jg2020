@@ -19,8 +19,9 @@
     //font-family: 'Source Serif Pro', serif;
     font-family: "Lato", sans-serif;
     font-weight: 500;
-    margin: 5rem 0;
+    margin: 8rem auto;
     color:rgb(13, 58, 109);
+    text-align: center;
 }
 
 
@@ -44,19 +45,30 @@
 .para-container {
     display: flex;
     border: none;
+    padding:24px 50px;
     
 }
 
 .about-para {
-    padding:24px 54px;
+   padding:0 65px;
     font-size:1.6rem;
     align-items: center;
     line-height: 23px;
     font-family: "Lato", sans-serif;
     line-height: 27px;
     color:rgb(13, 58, 109);
-   
-  
+    font-weight: 300;
+}
+
+.textbox-para {
+    padding: 0 95px;
+    font-size: 1.8em;
+    letter-spacing: 0.4px;
+    line-height: 29px;
+    color:rgb(13, 58, 109);
+    text-align: left;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
 }
 
 
