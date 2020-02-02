@@ -1,11 +1,51 @@
+.circle-button {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.circles-button {
+    display: flex;
+    justify-content:space-around;
+}
+
+.circle-button .blue {
+    background-color: #C5E1F4;
+}
+
+.circles-button .skin {
+    background-color: #e1b9aa;
+}
+
+.circles-button .purple {
+    background-color: #d5c0cd;
+}
+
+.btn {
+    border-radius: 50%;
+    width:22rem;
+    height:22rem;
+    line-height: 22rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    border: solid 2px #0d3a6d;
+    text-decoration: underline;
+    background-color: transparent;
+    transform: scale(1.05);
+}
+
 .text-box {
     background-color: red($color: #000000);
     min-width: 75%;
     min-height:15%;
-    border: 12px solid #cfaa65;
+    border: 12px solid #C5E1F4;
     margin: -2% 10%;
     display: flex;
-    padding: 2% 10%;
+    padding: 2% 10% 4% 10%;
+    
  
 }
 
@@ -17,7 +57,7 @@
 
 .text-right {
     padding: 0;
-    margin: 3.3rem -2.8rem 0 3.75rem;
+    margin: 3.3rem -8rem 0 3.75rem;
     font-size: 1em;
 }
 
@@ -26,7 +66,18 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
-    
+}
+
+#vocal-title {
+    height:35%;
+}
+
+#song-title {
+    height:28%;
+}
+
+#tech-title {
+    height:22%;
 }
 
 .basis, .weitere {
@@ -67,20 +118,18 @@
     transform: rotateX(180deg);
     padding-top:3.5%;  
     padding-bottom:3.5%;
-    background: #d5c0cd;
-
     font-family:helvetica;
-    font-size: 1.1em;
+    font-size: 1.3em;
     letter-spacing: 1%;
     color: dimgrey;
     font-weight: 100;
     letter-spacing: .6px;
+    line-height:18px;
+
 }
 
 .flip-card__front-r{
     background: #d5c0cd;
 }
 
-.flip-card__back-r {
-    background: #e1b9aa;
-}
+

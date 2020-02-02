@@ -63,7 +63,7 @@ body {
 
 .textbox-para {
   padding: 0 95px;
-  font-size: 1.8em;
+  font-size: 1.6em;
   letter-spacing: 0.4px;
   line-height: 29px;
   color: #0d3a6d;
@@ -92,7 +92,7 @@ body {
 .footer-icon {
   margin-bottom: 3rem; }
 
-.voc-intro, .cic-intro {
+voc-intro, .cic-intro {
   text-align: center; }
 
 .voc {
@@ -258,8 +258,16 @@ a:hover, a:active {
   display: flex;
   justify-content: space-around; }
 
+.circle-button .blue {
+  background-color: #C5E1F4; }
+
+.circles-button .skin {
+  background-color: #e1b9aa; }
+
+.circles-button .purple {
+  background-color: #d5c0cd; }
+
 .btn {
-  border: solid .5px black;
   border-radius: 50%;
   width: 22rem;
   height: 22rem;
@@ -268,17 +276,19 @@ a:hover, a:active {
   text-align: center; }
 
 .btn:hover {
-  background-color: #CDC0C2;
-  transform: scale(1.05) translateY(-0.5rem); }
+  border: solid 2px #0d3a6d;
+  text-decoration: underline;
+  background-color: transparent;
+  transform: scale(1.05); }
 
 .text-box {
   background-color: 0;
   min-width: 75%;
   min-height: 15%;
-  border: 12px solid #cfaa65;
+  border: 12px solid #C5E1F4;
   margin: -2% 10%;
   display: flex;
-  padding: 2% 10%; }
+  padding: 2% 10% 4% 10%; }
 
 .text-left {
   padding: 0;
@@ -287,13 +297,22 @@ a:hover, a:active {
 
 .text-right {
   padding: 0;
-  margin: 3.3rem -2.8rem 0 3.75rem;
+  margin: 3.3rem -8rem 0 3.75rem;
   font-size: 1em; }
 
 .themen {
   display: flex;
   justify-content: space-around;
   text-align: center; }
+
+#vocal-title {
+  height: 35%; }
+
+#song-title {
+  height: 28%; }
+
+#tech-title {
+  height: 22%; }
 
 .basis, .weitere {
   height: 90px;
@@ -329,19 +348,94 @@ a:hover, a:active {
   transform: rotateX(180deg);
   padding-top: 3.5%;
   padding-bottom: 3.5%;
-  background: #d5c0cd;
   font-family: helvetica;
-  font-size: 1.1em;
+  font-size: 1.3em;
   letter-spacing: 1%;
   color: dimgrey;
   font-weight: 100;
-  letter-spacing: .6px; }
+  letter-spacing: .6px;
+  line-height: 18px; }
 
 .flip-card__front-r {
   background: #d5c0cd; }
 
-.flip-card__back-r {
-  background: #e1b9aa; }
+.text-box {
+  background-color: 0;
+  min-width: 75%;
+  min-height: 15%;
+  border: 12px solid #C5E1F4;
+  margin: -2% 10%;
+  display: flex;
+  padding: 2% 10% 4% 10%; }
+
+.text-left {
+  padding: 0;
+  margin: 1.85em 1.64em 0 -2.1em;
+  font-size: 1em; }
+
+.text-right {
+  padding: 0;
+  margin: 3.3rem -8rem 0 3.75rem;
+  font-size: 1em; }
+
+.themen {
+  display: flex;
+  justify-content: space-around;
+  text-align: center; }
+
+#vocal-title {
+  height: 35%; }
+
+#song-title {
+  height: 28%; }
+
+#tech-title {
+  height: 22%; }
+
+.basis, .weitere {
+  height: 90px;
+  width: 420px; }
+
+.flip-card {
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-out-in;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  margin-top: -18px; }
+
+.flip-card:hover {
+  transform: rotateX(180deg); }
+
+.flip-card__front, .flip-card__front-r {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background: #e1b9aa;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+  font-family: helvetica;
+  font-size: 1.5em;
+  letter-spacing: 1%;
+  color: dimgrey;
+  font-weight: 100;
+  padding: auto 0;
+  letter-spacing: .6px; }
+
+.flip-card__back, .flip-card__back-r {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: rotateX(180deg);
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+  font-family: helvetica;
+  font-size: 1.3em;
+  letter-spacing: 1%;
+  color: dimgrey;
+  font-weight: 100;
+  letter-spacing: .6px;
+  line-height: 18px; }
+
+.flip-card__front-r {
+  background: #d5c0cd; }
 
 footer {
   display: flex;
