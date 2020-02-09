@@ -340,6 +340,8 @@ a:hover, a:active {
 .flip-card__front, .flip-card__front-r {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: rotateX(0);
   background: #e1b9aa;
   padding-top: 3.5%;
   padding-bottom: 3.5%;
